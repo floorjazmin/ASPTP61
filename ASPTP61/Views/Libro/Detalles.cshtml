@@ -1,0 +1,82 @@
+﻿@model ASPTP61.Models.libro
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+<div>
+    <h4>Libros</h4>
+
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Autor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Autor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ISBN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ISBN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Paginas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Paginas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Edicion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Edicion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Editorial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Editorial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CiudadyPais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CiudadyPais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeEdicion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeEdicion)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Editar", new { Id = Model.Id }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>
